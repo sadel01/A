@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.a.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<AnchorPane fx:id="base" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.a.HelloController">
+   <children>
+      <TextField fx:id="CuadroTexto" layoutX="491.0" layoutY="934.0" prefHeight="74.0" prefWidth="876.0" />
+      <Button layoutX="1386.0" layoutY="939.0" mnemonicParsing="false" onMouseClicked="#obtenerLetra" prefHeight="65.0" prefWidth="107.0" text="OK">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="1783.0" layoutY="987.0" mnemonicParsing="false" onAction="#BorrarPalabra" prefHeight="63.0" prefWidth="105.0" text="BORRRAR">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <AnchorPane fx:id="root" layoutX="9.0" layoutY="26.0" prefHeight="885.0" prefWidth="1903.0" />
+   </children>
+</AnchorPane>
